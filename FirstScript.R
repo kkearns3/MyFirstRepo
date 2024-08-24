@@ -8,3 +8,5 @@ plength <- iris$Petal.Length
 typeof(plength)
 is.vector(plength)
 hist(plength, main="Histogram of Petal Length")
+
+#adding a line for practice
