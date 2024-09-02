@@ -1,0 +1,34 @@
+---
+title: "Lecture09"
+format: html
+editor: visual
+---
+
+# Data Frames
+
+Create a vector with strings in it
+
+```{r}
+char_vec <- c('duck', 'goose', 'moose', 'mallard')
+sort(char_vec)
+```
+
+Data frames are useful for storing 2-d data
+
+-   all entries in a column have the same data type
+-   each column have the same number of values
+
+Recall that data() gives us all the different datasets we have in the packages in our environment
+
+Found data frame called trees
+
+```{r}
+trees$Height
+```
+Column names are attributes:
+
+```{r}
+names(trees)
+colnames(trees)[2:3]
+```
+

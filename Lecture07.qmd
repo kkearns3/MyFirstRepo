@@ -1,0 +1,36 @@
+---
+title: "Lecture07"
+format: html
+editor: visual
+---
+
+Create a vector
+
+```{r}
+runif(30)
+```
+Note we get different numbers every time without a seed
+
+```{r}
+runif(30)
+```
+We can get the same numbers every time by setting the seed
+```{r}
+set.seed(42)
+runif(30)
+```
+Subset this object
+```{r}
+set.seed(42)
+my_unif <- runif(30)
+my_unif[1:10]
+```
+Sort the vector 
+```{r}
+sort(my_unif)
+```
+Create a vector with strings
+```{r}
+char_vec <- c('dog', 'cat', 'zebra', 'fish')
+sort(char_vec)
+```
