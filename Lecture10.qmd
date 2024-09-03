@@ -1,0 +1,53 @@
+---
+title: "Lecture10"
+format: html
+editor: visual
+---
+
+## Lecture 10 - Lists
+
+-   Lists are one-dimensional, and heterogeneous
+
+Investigating the data frame
+```{r}
+is.list(trees)
+```
+```{r}
+is.data.frame(trees)
+```
+Can subset as a list
+```{r}
+trees[1]
+```
+Double brackets only return a single item, you can't return more than one column
+
+```{r}
+trees[[1]]
+```
+Lists are very useful because they can store a wide variety of things. Most modeling functions output in the form of a list
+
+E.g. linear model on trees data frame
+```{r}
+fit <- lm(Volume ~ Height + Girth, data=trees)
+str(fit, max.level = 1)
+```
+Helper functions
+```{r}
+#can use this:
+fit$coefficients
+
+#but it has a helper function:
+coef(fit)
+
+```
+```{r}
+fit$residuals
+residuals(fit)
+```
+These helper functions exist for many attributes, but not all (e.g. nothing for rank)
+
+```{r}
+
+```
+
+
